@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/build.css" rel="stylesheet" />
+    <title>Spotify landing page</title>
+  </head>
+  <body>
+    <nav>
+      <div
+        id="nav"
+        class="bg-black lg:px-52 py-6 w-full text-white flex items-center justify-between p-3 relative">
+        <div
+          class="flex items-center justify-center gap-1 hover:cursor-pointer">
+          <img src="./src/img/spotify.png" alt="Spotify" class="w-24 lg:w-32" />
+          <p
+            class="text-green-400 text-xs lg:text-xl font-bold text-right hidden xl:block">
+            | tapi bukan spotify
+          </p>
+        </div>
+        <div>
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8 lg:hidden hover:cursor-pointer">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+          <svg
+            id="xmark"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8 hidden lg:hidden hover:cursor-pointer">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+
+          <div
+            id="hamburgermenu"
+            class="absolute bg-gray-100 drop-shadow-2xl p-9 w-max right-5 top-16 rounded-lg hidden lg:hidden">
+            <ul class="flex flex-col gap-3 font-bold text-lg text-black">
+              <li class="hover:text-green-500 hover:cursor-pointer">Premium</li>
+              <li class="hover:text-green-500 hover:cursor-pointer">
+                Dukungan
+              </li>
+              <li class="hover:text-green-500 hover:cursor-pointer">
+                Download
+              </li>
+              <span class="border-b-2 w-5 border-black"></span>
+              <li
+                class="hover:text-green-500 hover:cursor-pointer text-gray-500">
+                Daftar
+              </li>
+              <li
+                class="hover:text-green-500 hover:cursor-pointer text-gray-500">
+                Masuk
+              </li>
+            </ul>
+          </div>
+
+          <ul class="lg:flex gap-6 hidden font-bold">
+            <li class="hover:text-green-500 hover:cursor-pointer">Premium</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">Dukungan</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">Download</li>
+            <span>|</span>
+            <li class="hover:text-green-500 hover:cursor-pointer text-gray-300">
+              Daftar
+            </li>
+            <li class="hover:text-green-500 hover:cursor-pointer text-gray-300">
+              Masuk
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="lg:px-52 lg:flex">
+        <div class="px-4">
+          <h1 class="text-2xl mt-11 font-bold lg:text-4xl lg:mt-20">
+            Rp 54,990 untuk 4 bulan Premium
+          </h1>
+          <h3 class="mt-3 text-xl font-semibold lg:text-2xl lg:mt-10">
+            Tawaran berakhir 26 Maret 2023. Dengarkan musik offline bebas iklan.
+            Hanya Rp 54,990/bulan sesudahnya. Batalkan kapan saja.
+          </h3>
+          <div class="lg:my-4">
+            <button
+              class="bg-black mt-5 text-white w-full rounded-full p-3 font-bold lg:w-max lg:px-10 hover:scale-105 transition-all">
+              MULAI
+            </button>
+            <button
+              class="mt-2 text-black w-full rounded-full p-3 font-bold border-2 lg:w-max lg:px-10 hover:scale-105 transition-all">
+              LIHAT PAKET
+            </button>
+          </div>
+          <p class="text-[11px] mt-10 lg:w-[600px]">
+            Hanya paket Individual. Rp 54,990/bulan sesudahnya. Tawaran berakhir
+            26 Maret 2023. Persyaratan dan ketentuan berlaku. Tawaran tidak
+            tersedia untuk pengguna yang pernah mencoba Premium.
+          </p>
+        </div>
+
+        <div class="flex justify-center items-center mb-12 mt-5 lg:mt-0">
+          <img
+            src="src/img/aiohtoprofile.png"
+            alt="ai ohto"
+            class="w-80 lg:w-[700px] lg:mt-12" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="bg-black text-white p-4 flex justify-center items-center flex-col text-center py-10">
+        <h1 class="font-bold text-2xl lg:text-4xl">
+          Memperkenalkan Premium Mini
+        </h1>
+        <h3 class="mt-4 font-semibold text-lg lg:text-2xl lg:my-9">
+          Download 30 lagu dan dengarkan musik bebas iklan semaumu, di 1
+          perangkat seluler.
+        </h3>
+        <button
+          class="bg-white w-full p-3 text-black rounded-full font-bold my-4 lg:w-max lg:px-8 hover:scale-105 transition-all">
+          LIHAT PAKET
+        </button>
+        <a href="#" class="text-[11px] mt-8 underline"
+          >Persyaratan dan ketentuan berlaku.</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center px-4 my-20">
+        <h1 class="font-bold text-3xl lg:text-4xl">Kenapa beli Premium?</h1>
+
+        <div class="flex lg:flex-row flex-col justify-center mt-10 gap-10">
+          <div
+            class="flex lg:flex-col justify-center items-center lg:w-72 lg:h-80 gap-5">
+            <div class="w-36 object-cover lg:mb-10">
+              <img src="./src/img/11.png" alt="rikka takanashi" />
+            </div>
+            <div class="w-full text-left lg:text-center">
+              <h1 class="font-bold text-xl">Download musik.</h1>
+              <p class="mt-2">Dengarkan di mana saja.</p>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:flex-col justify-center items-center lg:w-72 lg:h-80 gap-5">
+            <div class="w-36 object-cover lg:mb-10">
+              <img src="./src/img/22.png" alt="rikka takanashi" />
+            </div>
+            <div class="w-full text-left lg:text-center">
+              <h1 class="font-bold text-xl">Dengarkan musik bebas iklan.</h1>
+              <p class="mt-2">Nikmati musik tanpa henti.</p>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:flex-col justify-center items-center lg:w-72 lg:h-80 mt-4 gap-5">
+            <div class="w-36 object-cover lg:mb-10">
+              <img src="./src/img/33.png" alt="rikka takanashi" />
+            </div>
+            <div class="w-full text-left lg:text-center">
+              <h1 class="font-bold text-xl">
+                Putar lagu dalam urutan apa pun.
+              </h1>
+              <p class="mt-2">Lagu apa pun, dalam urutan apa pun.</p>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:flex-col justify-center items-center lg:w-72 lg:h-80 mt-2 gap-5">
+            <div class="w-36 object-cover lg:mb-10">
+              <img src="./src/img/44.png" alt="rikka takanashi" />
+            </div>
+            <div class="w-full text-left lg:text-center">
+              <h1 class="font-bold text-xl">Kualitas suara lebih tinggi.</h1>
+              <p class="mt-2">Rasakan keindahan suaranya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <div class="p-4 py-10 lg:py-20">
+        <h1 class="font-bold text-3xl text-center lg:text-4xl">
+          Pilih Premium kamu
+        </h1>
+        <p class="mt-2 text-center">
+          Dengarkan tanpa batas di HP, speaker, dan perangkat lainnya.
+        </p>
+
+        <div
+          class="mt-10 lg:px-56 flex flex-col justify-center items-center gap-5">
+          <div class="flex lg:flex-row flex-col gap-5">
+            <div
+              class="p-4 bg-white rounded-lg drop-shadow-2xl shadow-2xl lg:w-64 lg:flex lg:flex-col lg:justify-between">
+              <div>
+                <p
+                  class="text-blue-500 text-[12px] font-extrabold border border-blue-500 w-max py-1 px-2 mb-2 rounded-md">
+                  Satu kali bayar
+                </p>
+                <div class="text-sm font-medium lg:mb-[88px]">
+                  <h3 class="text-2xl font-bold">Mini</h3>
+                  <p>Mulai Rp 2,500/hari</p>
+                  <p>1 akun khusus ponsel</p>
+                </div>
+                <hr class="my-4 shadow-xl border-gray-500" />
+
+                <div class="text-sm font-medium">
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Dengarkan musik bebas iklan di ponsel</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Group Session</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Download 30 lagu di 1 perangkat seluler</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="bg-black mt-5 text-white w-full rounded-full p-3 font-bold hover:scale-105 transition-all">
+                  MULAI
+                </button>
+
+                <div class="my-2">
+                  <a href="#" class="text-[12px] my-10 underline">
+                    Persyaratan dan ketentuan berlaku.</a
+                  >
+                  <p class="text-[12px]">
+                    Tawaran tidak tersedia untuk pengguna yang pernah mencoba
+                    Premium.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="p-4 bg-white rounded-lg drop-shadow-2xl shadow-2xl lg:w-64 lg:flex lg:flex-col lg:justify-between">
+              <div>
+                <p
+                  class="text-white bg-blue-500 mb-2 text-[12px] font-extrabold py-1 px-2 rounded-md">
+                  4 bulan cuma Rp 54,900 dengan e-wallet atau pulsa
+                </p>
+                <p
+                  class="text-blue-500 text-[12px] font-extrabold border border-blue-500 w-max py-1 px-2 mb-2 rounded-md">
+                  Tersedia paket sekali bayar
+                </p>
+
+                <div class="text-sm font-medium">
+                  <h3 class="text-2xl font-bold">Individual</h3>
+                  <p>Rp 54,990/bulan sesudah periode tawaran</p>
+                  <p>1 akun</p>
+                </div>
+
+                <hr class="my-4 shadow-xl border-gray-500" />
+
+                <div class="text-sm font-medium">
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Mendengarkan musik bebas iklan</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Group Session</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Download 10rb lagu/perangkat di lima perangkat</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Prabayar atau berlangganan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="bg-black mt-5 text-white w-full rounded-full p-3 font-bold hover:scale-105 transition-all">
+                  MULAI
+                </button>
+
+                <div class="my-2">
+                  <a href="#" class="text-[12px] my-10 underline">
+                    Persyaratan dan ketentuan berlaku.</a
+                  >
+                  <p class="text-[12px]">
+                    Tawaran tidak tersedia untuk pengguna yang pernah mencoba
+                    Premium.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="p-4 bg-white rounded-lg drop-shadow-2xl shadow-2xl lg:w-64 lg:flex lg:flex-col lg:justify-between">
+              <div>
+                <p
+                  class="text-white bg-blue-500 mb-2 text-[12px] font-extrabold py-1 px-2 rounded-md">
+                  2 bulan cuma Rp 71,490 dengan e-wallet atau pulsa
+                </p>
+                <p
+                  class="text-blue-500 text-[12px] font-extrabold border border-blue-500 w-max py-1 px-2 mb-2 rounded-md">
+                  Tersedia paket sekali bayar
+                </p>
+                <h3 class="text-2xl font-bold">Duo</h3>
+                <div class="text-sm font-medium">
+                  <p>Rp 71,490/bulan sesudah periode tawaran</p>
+                  <p>2 akun</p>
+                </div>
+                <hr class="my-4 shadow-xl border-gray-500" />
+
+                <div class="text-sm font-medium">
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Untuk pasangan yang tinggal serumah</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Mendengarkan musik bebas iklan</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Group Session</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Download 10rb lagu/perangkat di 5 perangkat</p>
+                  </div>
+
+                  <div class="flex mt-2">
+                    <img
+                      src="src/img/ceklis.svg"
+                      alt="cek"
+                      class="w-6 h-6 mr-2" />
+                    <p>Prabayar atau berlangganan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="bg-black mt-5 text-white w-full rounded-full p-3 font-bold hover:scale-105 transition-all">
+                  MULAI
+                </button>
+
+                <div class="my-2">
+                  <a href="#" class="text-[12px] my-10 underline">
+                    Persyaratan dan ketentuan berlaku.</a
+                  >
+                  <p class="text-[12px]">
+                    Tawaran tidak tersedia untuk pengguna yang pernah mencoba
+                    Premium.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="p-4 bg-white rounded-lg drop-shadow-2xl shadow-2xl lg:w-64">
+              <p
+                class="text-white bg-blue-500 mb-2 text-[12px] font-extrabold py-1 px-2 rounded-md">
+                2 bulan cuma Rp 86,900 dengan e-wallet atau pulsa
+              </p>
+              <p
+                class="text-blue-500 text-[12px] font-extrabold border border-blue-500 w-max py-1 px-2 mb-2 rounded-md">
+                Tersedia paket sekali bayar
+              </p>
+              <h3 class="text-2xl font-bold">Family</h3>
+              <div class="text-sm font-medium">
+                <p>Rp 86,900/bulan sesudah periode tawaran</p>
+                <p>Sampai 6 akun</p>
+              </div>
+              <hr class="my-4 shadow-xl border-gray-500" />
+
+              <div class="text-sm font-medium">
+                <div class="flex mt-2">
+                  <img
+                    src="src/img/ceklis.svg"
+                    alt="cek"
+                    class="w-6 h-6 mr-2" />
+                  <p>Untuk keluarga yang tinggal serumah</p>
+                </div>
+
+                <div class="flex mt-2">
+                  <img
+                    src="src/img/ceklis.svg"
+                    alt="cek"
+                    class="w-6 h-6 mr-2" />
+                  <p>Blokir musik eksplisit</p>
+                </div>
+
+                <div class="flex mt-2">
+                  <img
+                    src="src/img/ceklis.svg"
+                    alt="cek"
+                    class="w-6 h-6 mr-2" />
+                  <p>Mendengarkan musik bebas iklan</p>
+                </div>
+
+                <div class="flex mt-2">
+                  <img
+                    src="src/img/ceklis.svg"
+                    alt="cek"
+                    class="w-6 h-6 mr-2" />
+                  <p>Group Session</p>
+                </div>
+
+                <div class="flex mt-2">
+                  <img
+                    src="src/img/ceklis.svg"
+                    alt="cek"
+                    class="w-6 h-6 mr-2" />
+                  <p>Download 10rb lagu/perangkat di 5 perangkat</p>
+                </div>
+
+                <div class="flex mt-2">
+                  <img
+                    src="src/img/ceklis.svg"
+                    alt="cek"
+                    class="w-6 h-6 mr-2" />
+                  <p>Prabayar atau berlangganan</p>
+                </div>
+              </div>
+
+              <button
+                class="bg-black mt-5 text-white w-full rounded-full p-3 font-bold hover:scale-105 transition-all">
+                MULAI
+              </button>
+
+              <div class="my-2">
+                <a href="#" class="text-[12px] my-10 underline">
+                  Persyaratan dan ketentuan berlaku.</a
+                >
+                <p class="text-[12px]">
+                  Tawaran tidak tersedia untuk pengguna yang pernah mencoba
+                  Premium.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center items-center lg:mt-10">
+            <div
+              class="flex justify-center lg:items-center lg:flex-row flex-col w-[800px] lg:gap-40 gap-5 bg-white drop-shadow-2xl p-4 rounded-lg">
+              <h3 class="text-2xl font-bold">
+                Diskon khusus untuk pelajar di tingkat universitas yang memenuhi
+                syarat.
+              </h3>
+
+              <button
+                class="border-2 border-black w-max p-4 px-10 py-3 rounded-full font-semibold text-left lg:text-center hover:scale-105 transition-all">
+                PELAJARI SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="lg:px-28 bg-black">
+      <div class="bg-black p-4 lg:flex lg:justify-around lg:py-20">
+        <div class="w-max">
+          <img
+            src="src/img/spotify.png"
+            alt="Spotify"
+            class="w-24 my-10 lg:my-5 lg:mb-0 mb-0 lg:w-40" />
+          <p class="text-green-400 text-xs font-bold lg:text-sm text-right">
+            tapi bukan spotify
+          </p>
+        </div>
+
+        <div class="text-white mt-7">
+          <h1 class="font-bold text-gray-400 text-sm">PERUSAHAAN</h1>
+          <ul class="flex flex-col gap-3 mt-4 font-semibold w-max">
+            <li class="hover:text-green-500 hover:cursor-pointer">Tentang</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">Pekerjaan</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">
+              For the Record
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-white mt-7">
+          <h1 class="font-bold text-gray-400 text-sm">KOMUNITAS</h1>
+          <ul class="flex flex-col gap-3 mt-4 font-semiboldw w-max">
+            <li class="hover:text-green-500 hover:cursor-pointer">
+              Untuk Artis
+            </li>
+            <li class="hover:text-green-500 hover:cursor-pointer">
+              Pengembang
+            </li>
+            <li class="hover:text-green-500 hover:cursor-pointer">Iklan</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">Investor</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">Vendor</li>
+          </ul>
+        </div>
+
+        <div class="text-white mt-7">
+          <h1 class="font-bold text-gray-400 text-sm">TAUTAN BERGUNA</h1>
+          <ul class="flex flex-col gap-3 mt-4 font-semibold w-max">
+            <li class="hover:text-green-500 hover:cursor-pointer">Dukungan</li>
+            <li class="hover:text-green-500 hover:cursor-pointer">
+              Pemutar Web
+            </li>
+            <li class="hover:text-green-500 hover:cursor-pointer">
+              Aplikasi Seluler Gratis
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-10 flex gap-5 lg:items-start">
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            class="fill-current text-white w-7 hover:text-green-500 hover:cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Instagram</title>
+            <path
+              d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+          </svg>
+
+          <svg
+            class="fill-current text-white w-7 hover:text-green-500 hover:cursor-pointer"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Twitter</title>
+            <path
+              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+          </svg>
+
+          <svg
+            role="img"
+            class="text-white fill-current w-7 hover:text-green-500 hover:cursor-pointer"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Facebook</title>
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between p-4 text-[10px] w-full bg-black text-gray-400 lg:text-xs">
+        <ul class="flex flex-wrap max-w-[150px] gap-4 lg:max-w-full">
+          <li class="hover:text-green-500 hover:cursor-pointer">Hukum</li>
+          <li class="hover:text-green-500 hover:cursor-pointer">
+            Pusat Privasi
+          </li>
+          <li class="hover:text-green-500 hover:cursor-pointer">
+            Kebijakan Privasi
+          </li>
+          <li class="hover:text-green-500 hover:cursor-pointer">Cookie</li>
+          <li class="hover:text-green-500 hover:cursor-pointer">
+            Tentang Iklan
+          </li>
+        </ul>
+
+        <div class="lg:flex lg:gap-5 lg:mb-20">
+          <p>© 2023 Spotify AB</p>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="fill-current w-4 mr-1">
+              <path
+                d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+            </svg>
+
+            <p>Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
