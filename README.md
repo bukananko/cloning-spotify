@@ -1,2 +1,4 @@
-tech stack = html, tailwind css, js.	
-	https://nkrqh.github.io/cloning-spotify
+cloning landing page spotify.
+
+tech stack = html, tailwind css, js.
+https://nkrqh.github.io/cloning-spotify
